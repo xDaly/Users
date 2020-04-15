@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<div class="container-fluid">
+    <div class="row m-3">
+<div *ngFor="let user of usersser.userslist ; index as i" class="card m-3" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Name : {{user.name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Age : {{user.age}}</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <button (click)="deleteuser(id)" class="btn btn-danger m-1">Delete</button>
+      <button href="#" class="btn btn-primary m-1">Edit</button>
+    </div>
+  </div>
+</div>
+</div> 
